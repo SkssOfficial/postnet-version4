@@ -33,6 +33,10 @@ let waitTimeFuncVar;
 let nextStageTime = 40;
 let nextStageTimeVar;
 
+let test1;
+let test2;
+let test3;
+
 // function preload() {
 //   imgLogo = loadImage('assets/logo.png');
 //   imgO = loadImage('assets/o.png');
@@ -153,9 +157,9 @@ function draw() {
         text("Mark: " + Math.max(stageResult[0], stageResult[1]) + '/8', 25, 130);
         text("Time Left: " + nextStageTime, 25, 180)
         
-        text("Left confidence: " + leftKnee.confidence);   // Debuging reading
-        test("leftKnee.y: " + leftKnee.y);
-        text("rightKnee.y: "+ rightKnee.y);
+        text("Left confidence: " + test1);   // Debuging reading
+        test("leftKnee.y: " + test2);
+        text("rightKnee.y: "+ test3);
 
     }
 }
@@ -180,11 +184,18 @@ function countMovement() {
                 if (leftKnee.confidence < confidenceOffset || rightKnee.confidence < confidenceOffset) {
                     break;
                 }
+                
+                test1 = leftKnee.confidence; // test
+                
                 if (rightKnee.y > leftKnee.y + poseOffset) {
                     stageResult[0] += 1
                 } else if (leftKnee.y > rightKnee.y + poseOffset) {
                     stageResult[1] += 1
                 }
+                
+                test2 = leftKnee.y;
+                test3 = rightKnee.y;
+                                
                 break;
             case '2':
             case '4':
