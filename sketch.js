@@ -35,7 +35,7 @@ let nextStageTimeVar;
 
 let test1;
 let test2;
-let test3";
+let test3;
 
 // function preload() {
 //   imgLogo = loadImage('assets/logo.png');
