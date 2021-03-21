@@ -30,7 +30,7 @@ let radio = 640 / 480
 let waitTime = 5;
 let waitTimeFuncVar;
 
-let nextStageTime = 35;
+let nextStageTime = 37;
 let nextStageTimeVar;
 
 let test1;
@@ -149,7 +149,7 @@ function draw() {
                 stopCounting = false;
             }
         }
-        textSize(48);
+        textSize(40);
         textAlign(LEFT, TOP);
         // fill(255, 0, 0);
         text("Stage: " + String(parseInt(stage) + 1), 25, 30);
@@ -157,9 +157,9 @@ function draw() {
         text("Mark: " + Math.max(stageResult[0], stageResult[1]) + '/8', 25, 130);
         text("Time Left: " + nextStageTime, 25, 180)
         
-        text("Left confidence: " + test1);   // Debuging reading
-        test("leftKnee.y: " + test2);
-        text("rightKnee.y: "+ test3);
+        text("Left confidence: " + test1, 25, 230);   // Debuging reading
+        test("leftKnee.y: " + test2, 25, 280);
+        text("rightKnee.y: "+ test3, 25, 330);
 
     }
 }
