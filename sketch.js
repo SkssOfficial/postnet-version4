@@ -152,18 +152,18 @@ function draw() {
         textSize(40);
         textAlign(LEFT, TOP);
         // fill(255, 0, 0);
-        text("Stage: " + String(parseInt(stage) + 1), 25, 30);
+        /*text("Stage: " + String(parseInt(stage) + 1), 25, 30);
         text("Count: " + stageResult[0] + ", " + stageResult[1], 25, 80);
         text("Mark: " + Math.max(stageResult[0], stageResult[1]) + '/8', 25, 130);
-        text("Time Left: " + nextStageTime, 25, 180)
+        text("Time Left: " + nextStageTime, 25, 180)*/
         
         
         /*text("Count: " + stageResult[0] + ", " + stageResult[1], 25, 30);
         text("Mark: " + Math.max(stageResult[0], stageResult[1]) + '/8', 25, 80);*/
         
-        text("Left confidence: " + test1, 25, 230);   // Debuging reading
-        test("leftKnee.y: " + test2, 25, 280);
-        text("rightKnee.y: " + test3, 25, 330);
+        text("Left confidence: " + test1, 25, 30);   // Debuging reading
+        test("leftKnee.y: " + test2, 25, 80);
+        text("rightKnee.y: " + test3, 25, 130);
 
     }
 }
