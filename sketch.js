@@ -152,6 +152,10 @@ function draw() {
         text("Count: " + stageResult[0] + ", " + stageResult[1], 25, 80);
         text("Mark: " + Math.max(stageResult[0], stageResult[1]) + '/8', 25, 130);
         text("Time Left: " + nextStageTime, 25, 180)
+        
+        text("Left confidence: " + leftKnee.confidence);   // Debuging reading
+        test("leftKnee.y: " + leftKnee.y);
+        text("rightKnee.y: "+rightKnee.y);
 
     }
 }
