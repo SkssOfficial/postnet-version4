@@ -30,7 +30,7 @@ let radio = 640 / 480
 let waitTime = 5;
 let waitTimeFuncVar;
 
-let nextStageTime = 35;
+let nextStageTime = 40;
 let nextStageTimeVar;
 
 // function preload() {
@@ -155,7 +155,7 @@ function draw() {
         
         text("Left confidence: " + leftKnee.confidence);   // Debuging reading
         test("leftKnee.y: " + leftKnee.y);
-        text("rightKnee.y: "+rightKnee.y);
+        text("rightKnee.y: "+ rightKnee.y);
 
     }
 }
