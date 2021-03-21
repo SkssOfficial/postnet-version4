@@ -34,8 +34,8 @@ let nextStageTime = 40;
 let nextStageTimeVar;
 
 let test1;
-let test2;
-let test3;
+let test2 = "false";
+let test3 = "false";
 
 // function preload() {
 //   imgLogo = loadImage('assets/logo.png');
@@ -162,8 +162,8 @@ function draw() {
         text("Mark: " + Math.max(stageResult[0], stageResult[1]) + '/8', 25, 80);*/
         
         text("Left confidence: " + test1, 25, 30);   // Debuging reading
-        test("leftKnee.y: " + test2, 25, 80);
-        text("rightKnee.y: " + test3, 25, 130);
+        test("leftKnee: " + test2, 25, 80);
+        text("rightKnee: " + test3, 25, 130);
 
     }
 }
