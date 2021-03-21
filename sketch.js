@@ -163,7 +163,7 @@ function draw() {
         
         text("Left confidence: " + test1, 25, 230);   // Debuging reading
         test("leftKnee.y: " + test2, 25, 280);
-        text("rightKnee.y: "+ test3, 25, 330);
+        text("rightKnee.y: " + test3, 25, 330);
 
     }
 }
@@ -193,12 +193,12 @@ function countMovement() {
                 
                 if (rightKnee.y > leftKnee.y + poseOffset) {
                     stageResult[0] += 1
-                    test2 = false;
-                    test3 = true;
+                    test2 = "false";
+                    test3 = "true";
                 } else if (leftKnee.y > rightKnee.y + poseOffset) {
                     stageResult[1] += 1
-                    test2 = true;
-                    test3 = false;
+                    test2 = "true";
+                    test3 = "false";
                 }
                                 
                 break;
