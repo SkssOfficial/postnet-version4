@@ -13,7 +13,7 @@ let poseNet;
 let poses = [];
 let stage = 0;
 let stageResult = [0, 0]
-let poseOffset = 10
+let poseOffset = 30
 let confidenceOffset = 0.1
 let stopCounting = false
 
@@ -30,7 +30,7 @@ let radio = 640 / 480
 let waitTime = 5;
 let waitTimeFuncVar;
 
-let nextStageTime = 120;
+let nextStageTime = 30;
 let nextStageTimeVar;
 
 let test1;
