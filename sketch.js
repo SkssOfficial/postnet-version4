@@ -7,7 +7,6 @@
 ml5 Example
 PoseNet example using p5.js
 === */
-let testvalue = 1;
 let video;
 let poseNet;
 let poses = [];
@@ -177,7 +176,7 @@ function countMovement() {
     for (let i = 0; i < poses.length; i++) {
         let pose = poses[i].pose;
         let leftKnee = pose.leftKnee;
-        let rightKnee = pose.rightKnee;
+        let rightKnee = pose.rightKnee;poseOffset
         let leftWrist = pose.leftWrist;
         let leftElbow = pose.leftElbow;
         let rightWrist = pose.rightWrist;
