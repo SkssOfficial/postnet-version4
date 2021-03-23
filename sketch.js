@@ -151,17 +151,17 @@ function draw() {
         textSize(40);
         textAlign(LEFT, TOP);
         // fill(255, 0, 0);
-        text("Stage: " + String(parseInt(stage) + 1), 25, 30);
-        text("Count: " + stageResult[0] + ", " + stageResult[1], 25, 80);
-        text("Mark: " + Math.max(stageResult[0], stageResult[1]) + '/8', 25, 130);
-        text("Time Left: " + nextStageTime, 25, 180)
+        text("Stage: " + String(parseInt(stage) + 1), 40, 30);
+        text("Count: " + stageResult[0] + ", " + stageResult[1], 40, 80);
+        text("Mark: " + Math.max(stageResult[0], stageResult[1]) + '/8', 40, 130);
+        text("Time Left: " + nextStageTime, 40, 180)
         
         
         /*text("Count: " + stageResult[0] + ", " + stageResult[1], 25, 30);
         text("Mark: " + Math.max(stageResult[0], stageResult[1]) + '/8', 25, 80);*/
         
-        text("Left confidence: " + test1, 25, 230);   // Debuging reading
-        text("Right confidence: " + test2, 25, 280);   // Debuging reading
+        text("Left confidence: " + test1, 40, 230);   // Debuging reading
+        text("Right confidence: " + test2, 40, 280);   // Debuging reading
         /*test("leftKnee: " + test2, 25, 80);
         text("rightKnee: " + test3, 25, 130);
         */
